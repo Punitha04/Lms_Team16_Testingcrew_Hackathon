@@ -9,10 +9,10 @@ monochrome=true,
 dryRun=false,
 plugin= {"pretty",
 		"html:target/htmlReports/report.html",
-		//"json:target/jsonReports/report.json",
-     // "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-      //  "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-     //  "timeline:target/timeline"
+		"json:target/jsonReports/report.json",
+     "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+      "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+     //"timeline:target/timeline"
         
         })
 public class TestRunner extends AbstractTestNGCucumberTests {
