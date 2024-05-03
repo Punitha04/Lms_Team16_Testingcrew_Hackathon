@@ -187,7 +187,7 @@ public class EditProgramDetailsPage
 		
 		//String xlPath="C:\\Users\\mayan\\eclipse-workspace1\\Team16_TesingCru\\src\\test\\resources\\DataFiles\\demo.xlsx";
 		//List<Map<String,String>> testData= xl.getData(xlPath,SheetName);
-		List<Map<String,String>> testData= xl.getData("src\\test\\resources\\DataFiles\\Team16_TesingCru.xlsx", SheetName);
+		List<Map<String,String>> testData= xl.getData("src\\test\\resources\\DataFiles\\Team16_TesitngCru.xlsx", SheetName);
 		
 		String data=testData.get(rowNumber).get(program_columnName);
 			

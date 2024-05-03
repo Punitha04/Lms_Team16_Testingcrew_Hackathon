@@ -32,7 +32,7 @@ public class LoginSD {
 	public void admin_enter_valid_credentials_and_clicks_login_button_from_and(String SheetName, Integer rowNumber) throws InvalidFormatException, IOException, InterruptedException {
 		System.out.println("I am in When");
 		Excel xl = new Excel();
-		List<Map<String,String>> testData= xl.getData("src\\test\\resources\\DataFiles\\Team16_TesingCru.xlsx", SheetName);
+		List<Map<String,String>> testData= xl.getData("src\\test\\resources\\DataFiles\\Team16_TestingCru.xlsx", SheetName);
 		//List<Map<String,String>> testData= xl.getData("C://Users//Ranji//OneDrive//Documents//Team16_TesingCru.xlsx", SheetName);
 		System.out.println("Value in testData" +testData);
 		String usrnme=testData.get(0).get("User");

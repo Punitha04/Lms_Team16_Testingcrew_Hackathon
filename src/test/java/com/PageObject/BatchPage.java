@@ -223,7 +223,7 @@ public class BatchPage {
     public List<Map<String,String>> getBatchDataFromExcel(String SheetName) throws InvalidFormatException, IOException {
     	Excel xl = new Excel();
     	
-    	List<Map<String,String>> testData= xl.getData("src\\test\\resources\\DataFiles\\Team16_TesingCru.xlsx", SheetName);
+    	List<Map<String,String>> testData= xl.getData("src\\test\\resources\\DataFiles\\Team16_TestingCru.xlsx", SheetName);
     	System.out.println("Value in testData " +testData);
     	return testData;
     }

@@ -76,7 +76,7 @@ public class EditUserStepDefinition extends BaseClass {
 	public void update_the_fields_with_valid_data_and_click_submit() throws InvalidFormatException {
 		List<Map<String, String>> testData;
 		try {
-		    testData = Excel.getData("C:\\Users\\Ranji\\OneDrive\\Documents\\Team16_TestingCru.xlsx", "User");
+		    testData = Excel.getData("src\\\\test\\\\resources\\\\DataFiles\\\\Team16_TestingCru.xlsx", "User");
 		    System.out.println("Excel Data: " + testData);
 		} catch (IOException e) {
 		    e.printStackTrace();

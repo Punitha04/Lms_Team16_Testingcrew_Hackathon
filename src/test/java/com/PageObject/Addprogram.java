@@ -91,7 +91,7 @@ public class Addprogram {
 	public List<Map<String, String>> exceldata(String sheetName,int rowNumber) throws InvalidFormatException, IOException
 	{
 		Excel xl = new Excel();
-		List<Map<String,String>> testData= xl.getData("src\\test\\resources\\DataFiles\\Team16_TesingCru.xlsx", sheetName);
+		List<Map<String,String>> testData= xl.getData("src\\test\\resources\\DataFiles\\Team16_TestingCru.xlsx", sheetName);
 		//List<Map<String,String>> testData= xl.getData("C:\\Users\\Ranji\\OneDrive\\Documents\\Team16_TestingCru.xlsx", sheetName);
 	
 	return testData;
@@ -100,7 +100,7 @@ public class Addprogram {
 	
 	{
 		Excel xl = new Excel();
-		List<Map<String,String>> testData= xl.getData("src\\test\\resources\\DataFiles\\Team16_TesingCru.xlsx", sheetName);
+		List<Map<String,String>> testData= xl.getData("src\\test\\resources\\DataFiles\\Team16_TestingCru.xlsx", sheetName);
 		//List<Map<String,String>> testData= xl.getData("C:\\Users\\Ranji\\OneDrive\\Documents\\Team16_TestingCru.xlsx", sheetName);
 		String name=testData.get(rowNumber).get("ProgramName");
 		String description = testData.get(rowNumber).get("ProgramDescription");
@@ -118,7 +118,7 @@ public void invalidField(String sheetName,int rowNumber) throws InvalidFormatExc
 
 {
 	Excel xl = new Excel();
-	List<Map<String,String>> testData= xl.getData("src\\test\\resources\\DataFiles\\Team16_TesingCru.xlsx", sheetName);
+	List<Map<String,String>> testData= xl.getData("src\\test\\resources\\DataFiles\\Team16_TestingCru.xlsx", sheetName);
 	//List<Map<String,String>> testData= xl.getData("C:\\Users\\Ranji\\OneDrive\\Documents\\Team16_TestingCru.xlsx", sheetName);
 	String name=testData.get(rowNumber).get("InvalidName");
 	String description = testData.get(rowNumber).get("InvalidDescription");
@@ -133,7 +133,7 @@ public void invalidField(String sheetName,int rowNumber) throws InvalidFormatExc
 public List<String> invalid_errorMsg(String sheetName,int rowNumber) throws InvalidFormatException, IOException
 {
 Excel xl = new Excel();
-List<Map<String,String>> testData= xl.getData("src\\test\\resources\\DataFiles\\Team16_TesingCru.xlsx", sheetName);
+List<Map<String,String>> testData= xl.getData("src\\test\\resources\\DataFiles\\Team16_TestingCru.xlsx", sheetName);
 //List<Map<String,String>> testData= xl.getData("C:\\Users\\Ranji\\OneDrive\\Documents\\Team16_TestingCru.xlsx", sheetName);
 	String nameErrormsg=testData.get(0).get("InvalidNameError");
 	String descriptionErrormsg = testData.get(0).get("InvalidDescError");
